@@ -15,7 +15,7 @@
 - Create a playlist via playlist dropdown in the navbar above.
 
 
-### **Project timeline: 2-6 September 2022**
+### **Project timeline: 4-6 September 2022**
 
 <br/><br/>
 ## I like to structure app into components before I start- [Figma file](https://www.figma.com/file/VaHuoHVS1AvqUD1RlupiWY/Movie-app?node-id=0%3A1) 
