@@ -17,7 +17,7 @@
 
 ### **Project timeline: 4-6 September 2022**
 
-<br/>
+<br/><br/>
 ## I like to structure app into components before I start- [Figma file](https://www.figma.com/file/VaHuoHVS1AvqUD1RlupiWY/Movie-app?node-id=0%3A1) 
 ![image](https://user-images.githubusercontent.com/59767187/188609664-604e022c-f092-4a15-ab17-d62ca7a471b3.png)
 
