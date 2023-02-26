@@ -5,30 +5,30 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./TopNav.css"
-import {useState} from "react";
+import React, { useState } from "react";
 import Example from "./Modal"
 import MovieList from './MovieList';
 
 
-function OffcanvasExample({handleLogout, favList, setAllPlaylists, allPlaylists}) {
- 
-  const [openModal, setOpenModal]=useState(false);
-  const [openList, setOpenList]= useState(false);
-const [activePlay, setActivePlay]=useState([])
+function OffcanvasExample({ handleLogout, favList, setAllPlaylists, allPlaylists }) {
 
-  const openListHandler=(play)=>{
-    const arr=allPlaylists.map((list)=>{
-      if(list.name===play){
+  const [openModal, setOpenModal] = useState(false);
+  const [openList, setOpenList] = useState(false);
+  const [activePlay, setActivePlay] = useState([])
+
+  const openListHandler = (play) => {
+    const arr = allPlaylists.map((list) => {
+      if (list.name === play) {
         return list.movies;
       }
     })
     setActivePlay(arr)
     console.log(arr)
-    !openList?setOpenList(true):setOpenList(false);
+    !openList ? setOpenList(true) : setOpenList(false);
   }
 
-  const newPlaylistHandler=()=>{
-    !openModal?setOpenModal(true):setOpenModal(false);
+  const newPlaylistHandler = () => {
+    !openModal ? setOpenModal(true) : setOpenModal(false);
 
   }
   return (
@@ -53,40 +53,40 @@ const [activePlay, setActivePlay]=useState([])
                   {/* <Nav.Link  href="#action1">Home</Nav.Link>
                   <Nav.Link href="#action2">Link</Nav.Link> */}
                   <NavDropdown
-                    
+
                     title="Playlists⭐"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-   
-                  {allPlaylists.map((fav)=>
-                  <NavDropdown.Item onClick={()=>{openListHandler(fav.name)}}>{fav.name}</NavDropdown.Item>
-                  )}
-                    
-                    
-                    <NavDropdown.Divider style={{backgroundColor:"#16b57f"}}/>
+
+                    {allPlaylists.map((fav) =>
+                      <NavDropdown.Item onClick={() => { openListHandler(fav.name) }}>{fav.name}</NavDropdown.Item>
+                    )}
+
+
+                    <NavDropdown.Divider style={{ backgroundColor: "#16b57f" }} />
                     <NavDropdown.Item onClick={newPlaylistHandler}>
                       Add new playlist
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
-                
-                
+
+
 
                 <div className="d-grid gap-2">
-                    <Button variant="primary"  onClick={handleLogout} style={{width:"8rem",backgroundColor:"#16b57f"}}>
-                      Log out
-                    </Button>
+                  <Button variant="primary" onClick={handleLogout} style={{ width: "8rem", backgroundColor: "#16b57f" }}>
+                    Log out
+                  </Button>
                 </div>
-               
+
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            {openModal && <Example newPlaylistHandler={newPlaylistHandler} setAllPlaylists={setAllPlaylists}/>}
-            {openList&& <MovieList setOpenList={setOpenList} activePlay={activePlay}/>}
+            {openModal && <Example newPlaylistHandler={newPlaylistHandler} setAllPlaylists={setAllPlaylists} />}
+            {openList && <MovieList setOpenList={setOpenList} activePlay={activePlay} />}
           </Container>
         </Navbar>
       ))}
 
-      
+
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import React from 'react'
 import Home from "./components/Home/Home";
 import Login from "./components/Auth/Login";
 import Signup from "./components/Auth/Signup"
@@ -12,21 +13,21 @@ function App() {
     <div className="App">
       {/* <Row>
         <Col> */}
-          <UserAuthContextProvider>
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <RouteProtect>
-                    <Home />
-                  </RouteProtect>
-                }
-              />
-              <Route path="/" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-            </Routes>
-          </UserAuthContextProvider>
-        {/* </Col>
+      <UserAuthContextProvider>
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <RouteProtect>
+                <Home />
+              </RouteProtect>
+            }
+          />
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </UserAuthContextProvider>
+      {/* </Col>
       </Row> */}
     </div>
   );
