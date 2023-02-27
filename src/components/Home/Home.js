@@ -22,7 +22,8 @@ const Home = () => {
     fetch(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`, {
       mode: 'cors',
       headers: {
-        'Access-Control-Allow-Origin': '*'
+
+        'Access-Control-Allow-Origin': 'https://631715a76702a7389789dfd9--visionary-phoenix-c7fbfa.netlify.app/home'
       }
     })
       .then((response) => {
