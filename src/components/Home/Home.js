@@ -19,7 +19,7 @@ const Home = () => {
 
   const fetchMovieHandler = (event) => {
     event.preventDefault();
-    axios.get(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`, {
+    fetch(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`, {
       mode: 'cors',
       headers: {
         'Access-Control-Allow-Origin': '*'
