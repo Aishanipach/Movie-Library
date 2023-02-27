@@ -19,7 +19,7 @@ const Home = () => {
 
   const fetchMovieHandler = (event) => {
     event.preventDefault();
-    axios.get(`http://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`)
+    axios.get(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`)
       .then((response) => {
         // console.log(response.data.Search);
         setMovies(response.data.Search)
