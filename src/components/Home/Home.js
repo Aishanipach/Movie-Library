@@ -19,13 +19,7 @@ const Home = () => {
 
   const fetchMovieHandler = (event) => {
     event.preventDefault();
-    fetch(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`, {
-      mode: 'cors',
-      headers: {
-
-        'Access-Control-Allow-Origin': 'https://631715a76702a7389789dfd9--visionary-phoenix-c7fbfa.netlify.app/home'
-      }
-    })
+    axios.get(`https://www.omdbapi.com/?s=${search}&apikey=d3bfd27a`)
       .then((response) => {
         // console.log(response.data.Search);
         setMovies(response.data.Search)
