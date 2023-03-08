@@ -5,8 +5,8 @@
       <a href="#"><img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-purple.svg?logo=bootstrap&logoColor=white"></a>
     <a href="#"><img alt="Netlify" src="https://img.shields.io/badge/Netlify-blue.svg?logo=netlify&logoColor=white"></a>
 
-## /* *Deployed on Netlify!🔴* */
-`Edit 3 March'23` : OMDB API serving response on a HTTP endpoint, Mixed Content error. [Here](https://github.com/Aishanipach/Movie-Library/edit/master/README.md#available-scripts)
+## [Deployed on Netlify!🔴](https://visionary-phoenix-c7fbfa.netlify.app/)
+
 
 - Fetching movie data from OMDI API - [http://www.omdbapi.com/](http://www.omdbapi.com/)
 - Firebase authentication - Signup using email & password or **Gmail** 
