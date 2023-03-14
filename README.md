@@ -11,8 +11,10 @@
 - Fetching movie data from OMDI API - [http://www.omdbapi.com/](http://www.omdbapi.com/)
 - Firebase authentication - Signup using email & password or **Gmail** 
 - After login you can search any movie with keyword, click search and go!
-- Add them to playlists OR
-- Create a playlist via playlist dropdown in the navbar above.
+
+Features required:
+- Adding movies to playlist which then POSTs it to the database.
+- Return to find your favorites in the list.
 
 
 ### **Project timeline: 4-6 September 2022**
