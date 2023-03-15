@@ -5,17 +5,19 @@
       <a href="#"><img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-purple.svg?logo=bootstrap&logoColor=white"></a>
     <a href="#"><img alt="Netlify" src="https://img.shields.io/badge/Netlify-blue.svg?logo=netlify&logoColor=white"></a>
 
-## /* *Deployed on Netlify!🔴* */
+## [*Deployed on Netlify!🔴*](https://crud--dainty-gingersnap-eb4438.netlify.app/)
 Edit: OMDB API serving response on a HTTP endpoint, Mixed Content error. [Here](https://github.com/Aishanipach/Movie-Library/edit/master/README.md#available-scripts)
 
 - Fetching movie data from OMDI API - [http://www.omdbapi.com/](http://www.omdbapi.com/)
 - Firebase authentication - Signup using email & password or **Gmail** 
 - After login you can search any movie with keyword, click search and go!
-- Add them to playlists OR
-- Create a playlist via playlist dropdown in the navbar above.
 
+New additions!✨
+- Add them to your watchlist
+- Keep track of your playlist by logging in again later!
 
-### **Project timeline: 4-6 September 2022**
+### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 13-15 March 2022**
+### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 4-6 September 2022**
 
 <br/><br/>
 ## I like to structure app into components before I start- [Figma file](https://www.figma.com/file/VaHuoHVS1AvqUD1RlupiWY/Movie-app?node-id=0%3A1) 
