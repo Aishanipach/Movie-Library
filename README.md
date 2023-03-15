@@ -13,7 +13,7 @@ Edit: OMDB API serving response on a HTTP endpoint, Mixed Content error. [Here](
 - After login you can search any movie with keyword, click search and go!
 
 New additions!✨
-- Add them to your watchlist
+- Firebase Firestore- Add them to your watchlist
 - Keep track of your playlist by logging in again later!
 
 ### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 13-15 March 2022**
