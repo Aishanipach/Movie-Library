@@ -10,33 +10,33 @@ import Example from "./Modal"
 import MovieList from './MovieList';
 
 
-function OffcanvasExample({ handleLogout, favList, setAllPlaylists, allPlaylists }) {
+function OffcanvasExample({ handleLogout, favList }) {
 
   const [openModal, setOpenModal] = useState(false);
   const [openList, setOpenList] = useState(false);
   const [activePlay, setActivePlay] = useState([])
 
-  const openListHandler = (play) => {
-    const arr = allPlaylists.map((list) => {
-      if (list.name === play) {
-        return list.movies;
-      }
-    })
-    setActivePlay(arr)
-    console.log(arr)
-    !openList ? setOpenList(true) : setOpenList(false);
-  }
+  // const openListHandler = (play) => {
+  //   const arr = favList.map((list) => {
+  //     if (list === play) {
+  //       return list
+  //     }
+  //   })
+  //   setActivePlay(arr)
+  //   console.log(arr)
+  //   !openList ? setOpenList(true) : setOpenList(false);
+  // }
 
-  const newPlaylistHandler = () => {
-    !openModal ? setOpenModal(true) : setOpenModal(false);
+  // const newPlaylistHandler = () => {
+  //   !openModal ? setOpenModal(true) : setOpenModal(false);
 
-  }
+  // }
   return (
     <div className='topn'>
       {['xl'].map((expand) => (
         <Navbar fixed="top" key={expand} bg="dark" expand={expand} className="mb-3 px-4 navbar-dark">
           <Container fluid>
-            <Navbar.Brand href="#">MoviesDB</Navbar.Brand>
+            <Navbar.Brand >MoviesDB</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -54,19 +54,20 @@ function OffcanvasExample({ handleLogout, favList, setAllPlaylists, allPlaylists
                   <Nav.Link href="#action2">Link</Nav.Link> */}
                   <NavDropdown
 
-                    title="Playlists⭐"
+                    title="Watchlist⭐"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
 
-                    {allPlaylists.map((fav) =>
-                      <NavDropdown.Item onClick={() => { openListHandler(fav.name) }}>{fav.name}</NavDropdown.Item>
-                    )}
+                    {favList[0] ? favList.map((fav) =>
+                      <div className={fav}>
+                        <NavDropdown.Item >{fav}</NavDropdown.Item>
+                        <NavDropdown.Divider style={{ backgroundColor: "#16b57f" }} />
+                      </div>
+                    ) : <NavDropdown.Item>Search and add!</NavDropdown.Item>}
 
 
-                    <NavDropdown.Divider style={{ backgroundColor: "#16b57f" }} />
-                    <NavDropdown.Item onClick={newPlaylistHandler}>
-                      Add new playlist
-                    </NavDropdown.Item>
+
+
                   </NavDropdown>
                 </Nav>
 
@@ -80,8 +81,8 @@ function OffcanvasExample({ handleLogout, favList, setAllPlaylists, allPlaylists
 
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            {openModal && <Example newPlaylistHandler={newPlaylistHandler} setAllPlaylists={setAllPlaylists} />}
-            {openList && <MovieList setOpenList={setOpenList} activePlay={activePlay} />}
+            {/* {openModal && <Example newPlaylistHandler={newPlaylistHandler} setAllPlaylists={setAllPlaylists} />}
+            {openList && <MovieList setOpenList={setOpenList} activePlay={activePlay} />} */}
           </Container>
         </Navbar>
       ))}
