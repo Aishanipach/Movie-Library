@@ -6,7 +6,6 @@
     <a href="#"><img alt="Netlify" src="https://img.shields.io/badge/Netlify-blue.svg?logo=netlify&logoColor=white"></a>
 
 ## [*Deployed on Netlify!🔴*](https://crud--dainty-gingersnap-eb4438.netlify.app/)
-Edit: OMDB API serving response on a HTTP endpoint, Mixed Content error. [Here](https://github.com/Aishanipach/Movie-Library/edit/master/README.md#available-scripts)
 
 - Fetching movie data from OMDI API - [http://www.omdbapi.com/](http://www.omdbapi.com/)
 - Firebase authentication - Signup using email & password or **Gmail** 
@@ -16,7 +15,7 @@ New additions!✨
 - Firebase Firestore- Add them to your watchlist
 - Keep track of your playlist by logging in again later!
 
-### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 13-15 March 2022**
+### **Project timeline v1 (https://crud--dainty-gingersnap-eb4438.netlify.app/): 13-15 March 2022**
 ### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 4-6 September 2022**
 
 <br/><br/>
