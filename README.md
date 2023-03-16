@@ -15,7 +15,7 @@ New additions!✨
 - Firebase Firestore- Add them to your watchlist
 - Keep track of your playlist by logging in again later!
 
-### **Project timeline v1 (https://crud--dainty-gingersnap-eb4438.netlify.app/): 13-15 March 2022**
+### **Project timeline v2 (https://crud--dainty-gingersnap-eb4438.netlify.app/): 13-15 March 2022**
 ### **Project timeline v1 (https://visionary-phoenix-c7fbfa.netlify.app/): 4-6 September 2022**
 
 <br/><br/>
